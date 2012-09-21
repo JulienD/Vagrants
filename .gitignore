@@ -1,0 +1,3 @@
+.DS_Store
+boxes/*				# Excludes all custom boxes
+!boxes/baseboxe		# Except for the blueprint baseboxe

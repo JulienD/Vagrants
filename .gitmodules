@@ -1,0 +1,15 @@
+[submodule "modules/apache"]
+	path = modules/apache
+	url = https://github.com/JulienD/puppetlabs-apache.git
+[submodule "modules/git"]
+	path = modules/git
+	url = https://github.com/JulienD/puppet-git.git
+[submodule "modules/ntp"]
+	path = modules/ntp
+	url = https://github.com/puppetlabs/puppetlabs-ntp.git
+[submodule "modules/mysql"]
+	path = modules/mysql
+	url = https://github.com/JulienD/puppetlabs-mysql.git
+[submodule "modules/php"]
+	path = modules/php
+	url = https://github.com/JulienD/puppet-php.git
