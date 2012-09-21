@@ -44,7 +44,7 @@ Vagrant::Config.run do |config|
   config.vm.share_folder("v-backup", "/home/vagrant/backup", "./backup", :nfs => TRUE)
 
   config.vm.provision :puppet do |puppet|
-    puppet.manifests_path = "./private/"
+    puppet.manifests_path = "./config/"
     puppet.manifest_file  = "manifest.pp"    
     puppet.module_path    = "../../modules"
     #puppet.options        = ['--verbose', '--debug']
