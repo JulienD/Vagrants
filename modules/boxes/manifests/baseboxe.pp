@@ -1,5 +1,7 @@
 class boxes::baseboxe {
-  
+
+  $username = "vagrant"
+   
   Exec { path => ["/usr/bin", "/bin", "/usr/sbin", "/sbin"] }
 
   File { owner => 'vagrant', group => 'vagrant' }

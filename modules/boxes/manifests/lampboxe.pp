@@ -23,7 +23,7 @@ class boxes::lampboxe inherits boxes::baseboxe {
   # MYSQL
   class { 'mysql': }
   class { 'mysql::server':
-    config_hash => {'root_password' => password}
+    config_hash => {'root_password' => $mysql_password}
   }
   class { 'mysql::php': }
 
