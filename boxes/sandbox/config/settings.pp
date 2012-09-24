@@ -1,5 +1,6 @@
-$mysql_password = 'YOUR DESIRED MYSQL ROOT PASSWORD'
+$username = "vagrant"
 
+$mysql_password = 'password'
 
 $php_memory_limit = '256'
 

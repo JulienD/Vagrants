@@ -1,19 +1,18 @@
 import "settings.pp"
 
-include boxes::drupalboxe
+include boxes::lampboxe
 
-# PROJECT
+# PONY PROJECT
 apache::vhost { 
-  'poney-club.local':
+  'pony-club.local':
     port               => '80',
-    docroot            => '/home/vagrant/public_html/poney-club',
-    serveradmin        => 'mail@me.org',
-    logroot            => "/var/log/poney-club.local",
+    docroot            => '/home/vagrant/public_html/pony-club',
+    serveradmin        => 'ponymaster@example.com',
+    logroot            => "/var/log/pony-club.local",
     configure_firewall => false;
 }
-
 mysql::db { 
   'poney-club':
-    user     => 'batman',
-    password => 'joker';
+    user     => 'pony',
+    password => 'hay';
 }
